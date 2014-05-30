@@ -15,7 +15,7 @@ def download_song(stream_url, song_name):
     url = urllib.urlopen(stream_url)
     # print url.getcode()
     if url.getcode() == 200:
-        track_dir = "/media/gary/STORENGO/PoolSideTracks/%s" % song_name + ".mp3"
+        track_dir = "/PoolSideTracks/%s" % song_name + ".mp3"
         urllib.urlretrieve(stream_url, track_dir)
 
 def update_progress(progress, cur_num, total_num, dataString):
